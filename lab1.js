@@ -1,31 +1,31 @@
- function randomValue(max) {
-           return Math.round(Math.random()*max);
-       }
+ // function randomValue(max) {
+ //           return Math.round(Math.random()*max);
+ //       }
 
        // let a, b, c;
 
-       // function getA(callback){
+       // function getA(callbackB, callbackC){
        //     setTimeout( function(){
        //         a = randomValue(5);
        //         console.log(a);
-       //         callback(a);
+       //         callbackB(callbackC, a);
                
-       //     }, 1000 );
+       //     }, 2000 );
 
        // }
 
-       // function getB (value, callout){
+       // function getB (callbackC, a){
        //     setTimeout(function(){
-       //         b = randomValue(value);
+       //         b = randomValue(a);
        //         console.log(b);
-       //         callout(b);
+       //         callbackC(b);
        //     }, 1000);
 
        // }
 
-       // function getC (key){
+       // function getC (b){
        //  setTimeout(function(){
-       //        c = randomValue(key);
+       //        c = randomValue(b);
        //        console.log(c);
        //        end();
        //  }, 1000)
@@ -39,4 +39,28 @@
 
             
         
-       // getA(getB,getC);
+       // getA(getB, getC);
+
+
+
+
+
+
+
+
+       function randomValue(max) {
+   return Math.round(Math.random()*max)
+}
+
+let a, b;
+
+setTimeout(function(){
+   a = randomValue(5)
+   console.log("a", a)
+}, 2000)
+
+setTimeout(function(){
+
+   b = randomValue(a)
+   console.log("b", b)
+}, 1000);
